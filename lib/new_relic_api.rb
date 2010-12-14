@@ -203,9 +203,9 @@ module NewRelicApi
     # Returns the color value for this threshold (Gray, Green, Yellow or Red).
     def color_value
       case threshold_value
-        when 3: 'Red'
-        when 2: 'Yellow'
-        when 1: 'Green'
+        when 3 then 'Red'
+        when 2 then 'Yellow'
+        when 1 then 'Green'
       else 'Gray'
       end
     end
